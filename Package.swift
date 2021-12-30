@@ -6,16 +6,14 @@ let exclude = [String]()
 
 let package = Package(
     name: "tbgs-shared",
-    platforms: [.iOS(.v13), .macOS(.v10_15)],
+    platforms: [
+        .macOS(.v12), .iOS(.v15)
+    ],
     products: [
-        .library(name: "TBGSLib", targets: ["TBGSLib"]),
+        .library(name: "TBGSLib", type: .dynamic, targets: ["TBGSLib"]),
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "TBGSLib", dependencies: [], exclude: exclude),
-        .testTarget(
-            name: "TBGSLibTests",
-            dependencies: ["TBGSLib"]),
+        .target(name: "TBGSLib", dependencies: [], exclude: exclude)
     ]
 )
