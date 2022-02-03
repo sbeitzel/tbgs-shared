@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum MatchState: Codable {
+public enum MatchState: String, Codable {
     case won, tied, inProgress
 }
