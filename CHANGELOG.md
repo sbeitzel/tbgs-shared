@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+* Add data to turn submission
+
 ## [1.0.1]
 
 * Make the `MatchState` enum string representable, to allow for easy storage in a database on the server
