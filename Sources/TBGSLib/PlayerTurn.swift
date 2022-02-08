@@ -12,4 +12,11 @@ public struct PlayerTurn: Codable {
     public let gameID: UUID
     public let matchID: UUID
     public let turnData: Data
+
+    init(playerID: UUID, gameID: UUID, matchID: UUID, turnData: Data) {
+        self.playerID = playerID
+        self.gameID = gameID
+        self.matchID = matchID
+        self.turnData = turnData
+    }
 }
