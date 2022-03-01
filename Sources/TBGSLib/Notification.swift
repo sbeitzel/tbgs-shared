@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Notification: Codable {
+public struct Notification: Codable {
     let id: UUID
     let type: NotificationType
     let gameID: UUID
